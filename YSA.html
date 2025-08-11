@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organization Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    header img {
+      height: 80px;
+      margin: 10px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .info, .links {
+      margin-bottom: 30px;
+    }
+
+    .links a {
+      display: block;
+      color: #00ffff;
+      text-decoration: none;
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header img {
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <img src="logo1.png" alt="Logo 1">
+      <img src="logo2.png" alt="Logo 2">
+    </header>
+
+    <section class="info">
+      <h1>Welcome to Our Organization</h1>
+      <p>We are committed to providing resources, support, and connections to help our community thrive. Explore the links below to learn more about our mission, services, and how you can get involved.</p>
+    </section>
+
+    <section class="links">
+      <h2>Useful Links</h2>
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#events">Upcoming Events</a>
+      <a href="#contact">Contact Information</a>
+    </section>
+  </div>
+</body>
+</html>
