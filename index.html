@@ -13,9 +13,9 @@
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      min-height: 100vh;
+	  background-color: rgba(255, 255, 255, 0.6); /* Light overlay */
+	  padding: 40px;
+	  min-height: 100vh;
     }
 
     header {
@@ -41,16 +41,12 @@
     }
 
     .links a {
-      display: block;
-      color: #00ffff;
-      text-decoration: none;
-      margin: 8px 0;
-      font-size: 1.1em;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-    }
+	  color: #0066cc; /* Medium blue */
+	}
+	.links a:hover {
+	  text-decoration: underline;
+	  color: #004999; /* Slightly darker on hover */
+	}
 
     @media (max-width: 600px) {
       header {
