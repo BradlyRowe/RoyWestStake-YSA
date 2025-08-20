@@ -7,12 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html">Home</a> |
-            <a href="#Contact">Contact Us</a>
-        </nav>
-    </header>
+    <div id="common-header"></div>
     <main>
         <section id="Contact">
             <h1>Contact Us</h1>
@@ -28,8 +23,16 @@
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Roy West Stake YSA</p>
-    </footer>
+        <div id="common-footer"></div>
+        <script>
+            // Simple HTML include for header and footer
+            function includeHTML(id, file) {
+                fetch(file)
+                    .then(response => response.text())
+                    .then(data => { document.getElementById(id).innerHTML = data; });
+            }
+            includeHTML('common-header', 'header.html');
+            includeHTML('common-footer', 'footer.html');
+        </script>
 </body>
 </html>

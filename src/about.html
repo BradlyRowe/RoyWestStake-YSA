@@ -7,12 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html">Home</a> |
-            <a href="#About">About</a>
-        </nav>
-    </header>
+    <div id="common-header"></div>
     <main>
         <section id="About">
             <h1>About Roy West Stake YSA</h1>
@@ -20,8 +15,16 @@
             <p>We host regular activities, service projects, and devotionals. Everyone is welcome to join and participate!</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Roy West Stake YSA</p>
-    </footer>
+        <div id="common-footer"></div>
+        <script>
+            // Simple HTML include for header and footer
+            function includeHTML(id, file) {
+                fetch(file)
+                    .then(response => response.text())
+                    .then(data => { document.getElementById(id).innerHTML = data; });
+            }
+            includeHTML('common-header', 'header.html');
+            includeHTML('common-footer', 'footer.html');
+        </script>
 </body>
 </html>
