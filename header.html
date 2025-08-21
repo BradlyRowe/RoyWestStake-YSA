@@ -1,4 +1,3 @@
-<!-- Common Header Start -->
 <header class="bg-white bg-opacity-75 py-2 mb-3 border-bottom">
   <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
     <div class="d-flex align-items-center gap-2">
@@ -6,7 +5,7 @@
       <img id="header-img-2" src="#" alt="Logo 2" style="height:32px;width:auto;">
     </div>
     <nav class="nav nav-pills flex-row mt-2 mt-md-0">
-      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="index.html">Home</a>
       <a class="nav-link" href="about.html#About">About</a>
       <a class="nav-link" href="contact.html#Contact">Contact</a>
       <a class="nav-link" href="gathering.html#Gathering">Gathering Place</a>
@@ -16,14 +15,8 @@
 <script>
   // Dynamically set image paths so they work from any page
   (function() {
-    var path = '';
-    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/RoyWestStake-YSA/') {
-      path = 'images/';
-    } else {
-      path = '../images/';
-    }
+    var path = 'images/';
     document.getElementById('header-img-1').src = path + 'christ_ysa.png';
     document.getElementById('header-img-2').src = path + 'temple_ysa.png';
   })();
 </script>
-<!-- Common Header End -->
