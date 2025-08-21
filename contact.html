@@ -21,19 +21,26 @@
           <section id="Contact">
             <h1 class="display-6 fw-bold mb-3">Contact Us</h1>
             <p>If you have any questions, suggestions, or would like to get involved, please reach out to us!</p>
-            <form>
+            <form method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc-Td2JPhgcWBPnJTkJq6CwQ_weztrENgRsIF-9faNTyKji0A/formResponse" target="_blank">
               <div class="mb-3">
-                <label for="name" class="form-label">Name:</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" name="entry.1045781291" required>
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="name" class="form-label">Name<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="name" name="entry.2005620554" required>
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label">Message:</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone" name="entry.1166974658">
               </div>
+              <div class="mb-3">
+                <label for="comments" class="form-label">Comments</label>
+                <textarea class="form-control" id="comments" name="entry.839337160" rows="3"></textarea>
+              </div>
+              <input type="hidden" name="fvv" value="1">
+              <input type="hidden" name="fbzx" value="-8987586626066057236">
+              <input type="hidden" name="pageHistory" value="0">
               <button type="submit" class="btn btn-primary">Send</button>
             </form>
           </section>
