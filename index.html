@@ -39,7 +39,7 @@
           <div class="card-body">
             <h5 class="card-title">About</h5>
             <p class="card-text">Learn more about our mission, vision, and activities for YSA.</p>
-            <a href="src/about.html#About" class="btn btn-primary">About Us</a>
+            <a href="about.html#About" class="btn btn-primary">About Us</a>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
           <div class="card-body">
             <h5 class="card-title">Contact</h5>
             <p class="card-text">Get in touch with us for questions, support, or to get involved.</p>
-            <a href="src/contact.html#Contact" class="btn btn-primary">Contact Us</a>
+            <a href="contact.html#Contact" class="btn btn-primary">Contact Us</a>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
           <div class="card-body">
             <h5 class="card-title">Gathering Place</h5>
             <p class="card-text">Find out about our events, activities, and community gatherings.</p>
-            <a href="src/gathering.html#Gathering" class="btn btn-primary">Gathering Place</a>
+            <a href="gathering.html#Gathering" class="btn btn-primary">Gathering Place</a>
           </div>
         </div>
       </div>
@@ -71,8 +71,8 @@
         .then(response => response.text())
         .then(data => { document.getElementById(id).innerHTML = data; });
     }
-    includeHTML('common-header', 'src/header.html');
-    includeHTML('common-footer', 'src/footer.html');
+    includeHTML('common-header', 'header.html');
+    includeHTML('common-footer', 'footer.html');
   </script>
 </body>
 </html>
